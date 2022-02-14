@@ -6,12 +6,23 @@
     "configurations": [
         {
             "type": "pwa-node",
+            "port": 7070,
             "request": "launch",
-            "name": "nodemon",
+            "name": "auth-service",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/auth-service/index.js"
+        },
+        {
+            "type": "pwa-node",
+            "port": 8080,
+            "request": "launch",
+            "name": "product-service",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/product-service/index.js"
         }
     ]
 }
